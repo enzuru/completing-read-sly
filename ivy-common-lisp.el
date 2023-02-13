@@ -999,4 +999,4 @@
                       (funcall ivy-common-lisp-spec-function symbol))
             :caller 'ivy-describe-common-lisp--spec-symbol))
 
-(provide 'counsel-tabs)
+(provide 'ivy-common-lisp)
