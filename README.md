@@ -1,6 +1,6 @@
 # Ivy completion for Common Lisp symbols
 
-This is a simple package that provides [Ivy](https://github.com/abo-abo/swiper) completion for Common Lisp symbols, along with opening their definitions in the [Common Lisp HyperSpec](http://www.lispworks.com/documentation/HyperSpec/Front/).
+This is a simple package that provides [Ivy](https://github.com/abo-abo/swiper) completion for Common Lisp symbols, along with opening their definitions in either Emacs or the [Common Lisp HyperSpec](http://www.lispworks.com/documentation/HyperSpec/Front/).
 
 Only symbols from the final 1994 specification of Common Lisp are provided for now.
 
@@ -20,12 +20,16 @@ If using [Sly](https://github.com/joaotavora/sly):
 
 ```
 (setq ivy-common-lisp-spec-function 'sly-hyperspec-lookup)
+;; or
+(setq ivy-common-lisp-spec-function 'sly-describe-symbol)
 ```
 
 If using [Slime](https://slime.common-lisp.dev):
 
 ```
 (setq ivy-common-lisp-spec-function 'slime-hyperspec-lookup)
+;; or
+(setq ivy-common-lisp-spec-function 'slime-describe-symbol)
 ```
 
 ## Tips

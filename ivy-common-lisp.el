@@ -4,7 +4,7 @@
 ;; SPDX-License-Identifier: GPL-3.0
 
 (defcustom ivy-common-lisp-spec-function nil
-  "The function to open Common Lisp documentation. Value usually should be 'sly-hyperspec-lookup or 'slime-hyperspec-lookup"
+  "The function to open Common Lisp documentation. Value usually should be 'sly-hyperspec-lookup, 'sly-describe-symbol, 'slime-hyperspec-lookup, 'slime-describe-symbol"
   :type 'function)
 
 (defconst ivy-common-lisp-spec-symbols
