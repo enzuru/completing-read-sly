@@ -988,7 +988,7 @@
     "zerop")
   "A list of all Common Lisp symbols")
 
-(defun ivy-describe-common-lisp-spec-symbol ()
+(defun ivy-common-lisp-describe-spec-symbol ()
   "Describe any Common Lisp spec symbol"
   (interactive)
   (ivy-read "Describe spec symbol: "
