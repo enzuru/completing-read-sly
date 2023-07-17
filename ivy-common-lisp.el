@@ -1,11 +1,33 @@
-;;; ivy-common-lisp.el --- Ivy support for Common Lisp symbols
+;;; ivy-common-lisp.el --- Ivy support for Common Lisp symbols  -*- lexical-binding:t; coding:utf-8 -*-
 
 ;; Copyright (C) enzu.ru
+
+;; Homepage: https://enzu.ru
+;; Keywords: test
+
+;; Package-Version 1.0.0
+;; Package-Requires: ((emacs "24.4"))
+
 ;; SPDX-License-Identifier: GPL-3.0
 
+;;; Commentary:
+
+;; Common Lisp symbols funneled into Ivy
+
+;;; Code:
+
+(require 'ivy)
+
+(defgroup ivy-common-lisp nil
+  "A group for customizing ivy-common-lisp."
+  :group 'company)
+
 (defcustom ivy-common-lisp-spec-function nil
-  "The function to open Common Lisp documentation. Value usually should be 'sly-hyperspec-lookup, 'sly-describe-symbol, 'slime-hyperspec-lookup, 'slime-describe-symbol"
-  :type 'function)
+  "The function to open Common Lisp documentation.
+Value usually should be 'sly-hyperspec-lookup, 'sly-describe-symbol,
+'slime-hyperspec-lookup, 'slime-describe-symbol."
+  :type 'function
+  :group 'ivy-common-lisp)
 
 (defconst ivy-common-lisp-spec-symbols
   '("&allow-other-keys"
@@ -986,10 +1008,11 @@
     "y-or-n-p"
     "yes-or-no-p"
     "zerop")
-  "A list of all Common Lisp symbols")
+  "A list of all Common Lisp symbols as documented in 1994."
+  :group 'ivy-common-lisp)
 
 (defun ivy-common-lisp-describe-spec-symbol ()
-  "Describe any Common Lisp spec symbol"
+  "Describe any Common Lisp spec symbol."
   (interactive)
   (ivy-read "Describe spec symbol: "
             ivy-common-lisp-spec-symbols
@@ -1000,3 +1023,5 @@
             :caller 'ivy-describe-common-lisp--spec-symbol))
 
 (provide 'ivy-common-lisp)
+
+;;; ivy-common-lisp.el ends here
