@@ -1008,8 +1008,7 @@ Value usually should be 'sly-hyperspec-lookup, 'sly-describe-symbol,
     "y-or-n-p"
     "yes-or-no-p"
     "zerop")
-  "A list of all Common Lisp symbols as documented in 1994."
-  :group 'ivy-common-lisp)
+  "A list of all Common Lisp symbols as documented in 1994.")
 
 (defun ivy-common-lisp-describe-spec-symbol ()
   "Describe any Common Lisp spec symbol."
