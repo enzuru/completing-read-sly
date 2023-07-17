@@ -3,7 +3,7 @@
 ;; Copyright (C) enzu.ru
 
 ;; Homepage: https://enzu.ru
-;; Keywords: test
+;; Keywords: lisp matching tools
 
 ;; Package-Version: 1.0.0
 ;; Package-Requires: ((emacs "24.4"))
