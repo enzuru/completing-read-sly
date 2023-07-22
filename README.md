@@ -1,35 +1,23 @@
-# Ivy completion for Common Lisp symbols
+# completing-read-sly
 
-This is a simple package that provides [Ivy](https://github.com/abo-abo/swiper) completion for Common Lisp symbols, along with opening their definitions in either Emacs or the [Common Lisp HyperSpec](http://www.lispworks.com/documentation/HyperSpec/Front/).
-
-Only symbols from the final 1994 specification of Common Lisp are provided for now.
-
-All these symbols are listed in a constant variable called `ivy-common-lisp-spec-symbols`.
+This is a simple package that provides `completing-read` for Sly symbols. When a symbol is selected, a definition of the symbol is shown.
 
 ## Installation
 
 ```
 (straight-use-package
- '(ivy-common-lisp
+ '(completing-read-sly
    :type git
    :host github
-   :repo "enzuru/ivy-common-lisp"))
-```
+   :repo "enzuru/completing-read-sly"))
+(require 'completing-read-sly)
 
-If using [Sly](https://github.com/joaotavora/sly):
+(define-key common-lisp-mode-map (kbd "C-h s") 'completing-read-geiser-describe-symbol)
+(define-key sly-repl-mode-map (kbd "C-h s") 'completing-read-geiser-describe-symbol)
 
-```
 (setq ivy-common-lisp-spec-function 'sly-hyperspec-lookup)
 ;; or
 (setq ivy-common-lisp-spec-function 'sly-describe-symbol)
-```
-
-If using [Slime](https://slime.common-lisp.dev):
-
-```
-(setq ivy-common-lisp-spec-function 'slime-hyperspec-lookup)
-;; or
-(setq ivy-common-lisp-spec-function 'slime-describe-symbol)
 ```
 
 ## Tips
