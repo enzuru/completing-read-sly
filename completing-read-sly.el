@@ -25,7 +25,7 @@
 
 (defun completing-read-sly-search ()
   "Send apropos command to Sly."
-  (let* ((result (sly-eval `(common-lisp:apropos "def"))))
+  (let* ((result (sly-eval `(common-lisp:apropos-list "def"))))
     (debug)))
 
 (defun completing-read-sly ()
