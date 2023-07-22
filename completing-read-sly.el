@@ -12,7 +12,7 @@
 
 ;;; Commentary:
 
-;; completing-read provides a list of symbols available in your Sly session
+;; completing-read-sly provides a list of symbols available in your Sly session
 
 ;;; Code:
 
