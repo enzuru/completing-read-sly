@@ -6,7 +6,7 @@ Use the completion framework of your choice, whether [ivy](https://github.com/ab
 
 ## Installation
 
-```
+```lisp
 (straight-use-package
  '(completing-read-sly
    :type git
