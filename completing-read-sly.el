@@ -18,15 +18,9 @@
 
 (require 'sly)
 
-(defun completing-read-sly--get-symbol (unparsed-string)
-  "Grab symbol from UNPARSED-STRING."
-  (string-match "\\(?:^\\|[^:]:\\)[[:space:]]+\\([^[:space:]]+\\)" unparsed-string)
-  (match-string 1 unparsed-string))
-
 (defun completing-read-sly-search ()
   "Send apropos command to Sly."
-  (let* ((result (sly-eval `(common-lisp:apropos-list "" nil t))))
-    result))
+  (sly-eval `(common-lisp:apropos-list "" nil t)))
 
 (defun completing-read-sly ()
   "Get list of symbols available in your Sly session."
