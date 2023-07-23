@@ -29,11 +29,11 @@
     result))
 
 (defun completing-read-sly ()
-  "Get list of symbols available in your Sly session"
+  "Get list of symbols available in your Sly session."
   (interactive)
   (sly-describe-symbol
    (completing-read "Look up symbol in Sly: " (completing-read-sly-search))))
 
 (provide 'completing-read-sly)
 
-;;; completing-read-sly.el
+;;; completing-read-sly.el ends here
