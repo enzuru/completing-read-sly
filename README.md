@@ -19,7 +19,7 @@ I run the completion query using `(apropos-list "" nil t)`. If I need to do some
 (require 'completing-read-sly)
 
 (define-key common-lisp-mode-map (kbd "C-h s") 'completing-read-sly-describe-symbol)
-(define-key sly-repl-mode-map (kbd "C-h s") 'completing-read-sly-describe-symbol)
+(define-key sly-mrepl-mode-map (kbd "C-h s") 'completing-read-sly-describe-symbol)
 ```
 
 ### Using with Ivy
