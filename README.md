@@ -12,8 +12,8 @@ This is a simple package that provides `completing-read` for Sly symbols. When a
    :repo "enzuru/completing-read-sly"))
 (require 'completing-read-sly)
 
-(define-key common-lisp-mode-map (kbd "C-h s") 'completing-read-geiser-describe-symbol)
-(define-key sly-repl-mode-map (kbd "C-h s") 'completing-read-geiser-describe-symbol)
+(define-key common-lisp-mode-map (kbd "C-h s") 'completing-read-sly-describe-symbol)
+(define-key sly-repl-mode-map (kbd "C-h s") 'completing-read-sly-describe-symbol)
 
 (setq ivy-common-lisp-spec-function 'sly-hyperspec-lookup)
 ;; or
