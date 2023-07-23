@@ -4,6 +4,10 @@ This is a simple package that provides `completing-read` for Sly symbols. When a
 
 Use the completion framework of your choice, whether [ivy](https://github.com/abo-abo/swiper), [vertico](https://github.com/minad/vertico), [mct](https://git.sr.ht/~protesilaos/mct), or just the standard icomplete.
 
+I have only tested this with SBCL, as that is the only Common Lisp distribution that I use.
+
+I run the completion query using `(apropos-list "" nil t)`. If I need to do something else for your Common Lisp distribution, please submit a pull request.
+
 ## Installation
 
 ```lisp
