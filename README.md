@@ -14,10 +14,12 @@ This is a simple package that provides `completing-read` for Sly symbols. When a
 
 (define-key common-lisp-mode-map (kbd "C-h s") 'completing-read-sly-describe-symbol)
 (define-key sly-repl-mode-map (kbd "C-h s") 'completing-read-sly-describe-symbol)
+```
 
-(setq ivy-common-lisp-spec-function 'sly-hyperspec-lookup)
-;; or
-(setq ivy-common-lisp-spec-function 'sly-describe-symbol)
+### Using with Ivy
+
+```lisp
+(setf completing-read-function #'ivy-completing-read)
 ```
 
 ## Tips
