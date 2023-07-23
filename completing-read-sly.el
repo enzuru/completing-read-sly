@@ -26,7 +26,8 @@
   "Get list of symbols available in your Sly session."
   (interactive)
   (sly-describe-symbol
-   (completing-read "Look up symbol in Sly: " (completing-read-sly-search))))
+   (completing-read "Look up symbol in Sly: "
+                    (completing-read-sly-search))))
 
 (provide 'completing-read-sly)
 
