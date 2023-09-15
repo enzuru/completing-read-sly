@@ -1,6 +1,6 @@
 # completing-read-sly
 
-This is a simple package that provides `completing-read` for Sly symbols. When a symbol is selected, a definition of the symbol is shown.
+This is a simple package that provides `completing-read` for SLY symbols. When a symbol is selected, a definition of the symbol is shown.
 
 Use the completion framework of your choice, whether [ivy](https://github.com/abo-abo/swiper), [vertico](https://github.com/minad/vertico), [mct](https://git.sr.ht/~protesilaos/mct), or just the standard icomplete.
 
