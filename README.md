@@ -30,4 +30,4 @@ I run the completion query using `(apropos-list "" nil t)`. If I need to do some
 
 ## License
 
-Licensed under the GPLv3; copyright is assigned to my eponymous nonprofit [enzu.ru](https://enzu.ru)
+Licensed under the GPLv3; copyright is assigned to my eponymous charity [enzu.ru](https://enzu.ru)
