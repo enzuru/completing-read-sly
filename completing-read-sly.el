@@ -19,14 +19,14 @@
 (require 'sly)
 
 (defun completing-read-sly-search ()
-  "Send apropos command to Sly."
+  "Send apropos command to SLY."
   (sly-eval `(common-lisp:apropos-list "" nil t)))
 
 (defun completing-read-sly ()
-  "Get list of symbols available in your Sly session."
+  "Get list of symbols available in your SLY session."
   (interactive)
   (sly-describe-symbol
-   (completing-read "Look up symbol in Sly: "
+   (completing-read "Look up symbol in SLY: "
                     (completing-read-sly-search))))
 
 (provide 'completing-read-sly)
